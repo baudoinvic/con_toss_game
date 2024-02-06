@@ -1,8 +1,10 @@
 import random
 
+ #correct the input 
 def is_correct_input(value):
     return value in ['0', '1']
 
+#get the coin_side
 def get_coin_side():
     return random.choice(['Heads', 'Tails'])
 
@@ -12,17 +14,19 @@ def get_side_name(side):
     elif side == '1':
         return 'Tails'
 
-# def view_side(bet_name):
-#     print(f"My bet is {bet_name}.")
+#view side
+def view_side(bet_name):
+    print(f"My bet is {bet_name}.")
 
-# def get_result(bet, coin_side):
-#     if bet == coin_side:
-#         return 'win'
-#     else:
-#         return 'lose'
-
-# def view_result(result):
-#     print(f"You {result}!")
+#get result
+def get_result(bet, coin_side):
+    if bet == coin_side:
+        return 'win'
+    else:
+        return 'lose'
+#view the result
+def view_result(result):
+    print(f"You {result}!")
 
 def play():
     print("Start 'coin toss'")
